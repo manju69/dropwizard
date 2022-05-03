@@ -1,7 +1,7 @@
 package resource;
 
 import com.codahale.metrics.annotation.Timed;
-import repository.GeolocationDAO;
+import service.GeolocationService;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -10,17 +10,18 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import java.util.Optional;
 
-@Path("/geolocation")
+@Path("/")
+@Produces(MediaType.APPLICATION_JSON)
 public class GeolocationResource {
-    private final GeolocationDAO geolocationDAO;
-    public GeolocationResource(GeolocationDAO geolocationDAO) {
-        this.geolocationDAO = geolocationDAO;
+    private final GeolocationService geolocationService;
+    public GeolocationResource(GeolocationService geolocationService)
+    {
+        this.geolocationService = geolocationService;
     }
 
     @GET
     @Timed
-    @Produces(MediaType.APPLICATION_JSON)
-    public String getGeolocation(@QueryParam("ipAddress") Optional<String> ipAddress) {
-        return "Testing dropwizard application" +ipAddress;
+    public String getGeolocation() {
+            return "Testing dropwizard application";
     }
 }

@@ -8,6 +8,7 @@ import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import repository.GeolocationDAO;
 import resource.GeolocationResource;
+import service.GeolocationService;
 
 public class GeolocationApplication extends Application<GeolocationConfiguration> {
     public static void main(String[] args) throws Exception {
@@ -21,7 +22,8 @@ public class GeolocationApplication extends Application<GeolocationConfiguration
     @Override
     public void run(GeolocationConfiguration geolocationConfiguration, Environment environment) throws Exception {
         GeolocationDAO geolocationDAO = new GeolocationDAO(hibernate.getSessionFactory());
-        final GeolocationResource resource = new GeolocationResource(geolocationDAO);
+        GeolocationService geolocationService = new GeolocationService(geolocationDAO);
+        final GeolocationResource resource = new GeolocationResource(geolocationService);
         environment.jersey().register(resource);
     }
     private final HibernateBundle<GeolocationConfiguration> hibernate = new HibernateBundle<GeolocationConfiguration>(Geolocation.class) {
