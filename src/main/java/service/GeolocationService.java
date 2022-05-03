@@ -7,18 +7,17 @@ import repository.GeolocationDAO;
 import service.adapter.GeolocationAdapter;
 
 import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
 import java.time.LocalDateTime;
-import java.util.Optional;
+
 
 public class GeolocationService implements IGeolocationService{
     private final String getURL = "http://ip-api.com/json/";
     private final GeolocationDAO geolocationDAO;
     private Client client;
 
-    public GeolocationService(GeolocationDAO geolocationDAO){
+    public GeolocationService(GeolocationDAO geolocationDAO, Client client){
         this.geolocationDAO = geolocationDAO;
-        client = ClientBuilder.newClient();
+        this.client = client;
     }
 
     public GeolocationDTO getGeoDataFromAPI(String ipAddress){
@@ -27,15 +26,22 @@ public class GeolocationService implements IGeolocationService{
         try{
            // log.info("Ip address Searching in Database: "+ipAddress);
             geoData = getGeoDataFromDB(ipAddress);
+            if(geoData==null)
+                System.out.println("not in database");
             if(LocalDateTime.now().minusMinutes(5l).isAfter(geoData.getUpdateTime())){
+                System.out.println("5 min timer");
                 //log.info("Refreshing data in 5 minutes by calling external API");
-                geoData =  client.target(getURL+ipAddress).request().get(Geolocation.class);
+                geoData =  client.target(getURL+ipAddress).request().get().readEntity(Geolocation.class);
             }
             geolocationDTO = GeolocationAdapter.get(geoData);
         }
         catch (ClientDataException c){
            // log.info("External API is called to search IP address: "+ipAddress);
-            geoData = client.target(getURL+ipAddress).request().get(Geolocation.class);
+            System.out.println("calling api");
+            geoData = client.target(getURL+ipAddress).request().get().readEntity(Geolocation.class);
+            if(geoData==null){
+                System.out.println("not found in api");
+            }
             if(geoData.getStatus().equalsIgnoreCase("success")){
                 saveGeoData(ipAddress,geoData);
             }
@@ -53,7 +59,6 @@ public class GeolocationService implements IGeolocationService{
     public Geolocation getGeoDataFromDB (String ipAddress){
         //log.info("Database is called to search Ip address: "+ipAddress);
         Geolocation geolocationOpt = geolocationDAO.findByIpAddress(ipAddress);
-        Geolocation geolocation = null;
         if(geolocationOpt!=null){
             System.out.println("Record found in database");
             //log.info("Record found in database");
@@ -62,6 +67,6 @@ public class GeolocationService implements IGeolocationService{
             System.out.println("Record not found in database: need to call external API");;
             throw new ClientDataException("Ip address not present in database");
         }
-        return geolocation;
+        return geolocationOpt;
     }
 }

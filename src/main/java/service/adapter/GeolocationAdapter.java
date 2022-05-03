@@ -6,7 +6,7 @@ import domain.dto.GeolocationDTO;
 public class GeolocationAdapter {
     public static GeolocationDTO get(Geolocation dao){
         GeolocationDTO dto = new GeolocationDTO();
-        dto.setQuery(dao.getIpAddress());
+        dto.setQuery(dao.getQuery());
         dto.setStatus(dao.getStatus());
         dto.setCountryCode(dao.getCountryCode());
         dto.setCountry(dao.getCountry());

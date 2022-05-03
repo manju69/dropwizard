@@ -1,8 +1,19 @@
+#server:
+#  type: simple
+#  connector:
+#    type: http
+#    port: 8080
 server:
-  type: simple
-  connector:
-    type: http
-    port: 8080
+  adminMinThreads: 1
+  adminMaxThreads: 64
+  adminContextPath: /
+  applicationContextPath: /
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
 
 database:
   # the name of your JDBC driver
@@ -15,7 +26,7 @@ database:
   password: root
 
   # the JDBC URL
-  url: jdbc:mysql://localhost:3306/geolocationdrop
+  url: jdbc:mysql://localhost:3306/geolocationdrop?createDatabaseIfNotExist=true
 
   # the maximum amount of time to wait on an empty pool before throwing an exception
   maxWaitForConnection: 1s
@@ -34,5 +45,7 @@ database:
 
   # any properties specific to your JDBC driver:
   properties:
-    charSet: propertiesUTF-8
+    charSet: UTF-8
     hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate.show_sql: true
+    hibernate.hbm2ddl.auto: update
