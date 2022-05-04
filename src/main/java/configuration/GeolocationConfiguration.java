@@ -16,7 +16,6 @@ public class GeolocationConfiguration extends Configuration {
 
     @JsonProperty("database")
     public PooledDataSourceFactory getDataSourceFactory() {
-        System.out.println("returning datasourceFactory");
         return dataSourceFactory;
     }
 
