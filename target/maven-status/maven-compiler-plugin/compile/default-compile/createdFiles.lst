@@ -1,6 +1,0 @@
-configuration\GeolocationConfiguration.class
-GeolocationApplication$1.class
-domain\Geolocation.class
-resource\GeolocationResource.class
-GeolocationApplication.class
-repository\GeolocationDAO.class
