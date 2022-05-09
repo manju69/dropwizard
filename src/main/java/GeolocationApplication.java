@@ -5,18 +5,15 @@ import domain.Geolocation;
 import exception.InputValidation;
 import io.dropwizard.Application;
 import io.dropwizard.client.JerseyClientBuilder;
+import io.dropwizard.client.JerseyClientConfiguration;
 import io.dropwizard.db.PooledDataSourceFactory;
 import io.dropwizard.hibernate.HibernateBundle;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import repository.GeolocationDAO;
 import resource.GeolocationResource;
 import service.GeolocationService;
-
 import javax.ws.rs.client.Client;
-import java.util.concurrent.TimeUnit;
 
 public class GeolocationApplication extends Application<GeolocationConfiguration> {
     public static void main(String[] args) throws Exception {
@@ -30,7 +27,6 @@ public class GeolocationApplication extends Application<GeolocationConfiguration
 
     @Override
     public void initialize(Bootstrap<GeolocationConfiguration> bootstrap) {
-
         bootstrap.addBundle(hibernate);
     }
 
@@ -38,7 +34,7 @@ public class GeolocationApplication extends Application<GeolocationConfiguration
     public void run(GeolocationConfiguration geolocationConfiguration, Environment environment) throws Exception {
         final GeolocationCaching cacheInstance = GeolocationCaching.getInstance();
         final GeolocationDAO geolocationDAO = new GeolocationDAO(hibernate.getSessionFactory());
-        final Client client = new JerseyClientBuilder(environment).using(geolocationConfiguration.getJerseyClientConfiguration())
+        final Client client = new JerseyClientBuilder(environment).using(new JerseyClientConfiguration())
                 .build(getName());
         final GeolocationService geolocationService = new GeolocationService(geolocationDAO,client);
         cacheInstance.initGeoCache(geolocationService);
