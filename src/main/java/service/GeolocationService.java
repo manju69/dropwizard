@@ -40,9 +40,6 @@ public class GeolocationService implements IGeolocationService{
         catch (ClientDataException c){
            log.info("External API is called to search IP address: "+ipAddress);
             geoData = client.target(getURL+ipAddress).request().get().readEntity(Geolocation.class);
-            if(geoData==null){
-                System.out.println("not found in api");
-            }
             if(geoData.getStatus().equalsIgnoreCase("success")){
                 saveGeoData(ipAddress,geoData);
             }

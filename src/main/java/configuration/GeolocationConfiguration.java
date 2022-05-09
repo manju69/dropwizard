@@ -7,7 +7,6 @@ import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.db.PooledDataSourceFactory;
 
 import javax.validation.Valid;
-import javax.validation.constraints.NotNull;
 
 public class GeolocationConfiguration extends Configuration {
 
@@ -24,17 +23,17 @@ public class GeolocationConfiguration extends Configuration {
         this.dataSourceFactory = dataSourceFactory;
     }
 
-    @Valid
-    @NotNull
-    private JerseyClientConfiguration jerseyClient = new JerseyClientConfiguration();
-
-    @JsonProperty("jerseyClient")
-    public JerseyClientConfiguration getJerseyClientConfiguration() {
-        return jerseyClient;
-    }
-
-    @JsonProperty("jerseyClient")
-    public void setJerseyClientConfiguration(JerseyClientConfiguration jerseyClient) {
-        this.jerseyClient = jerseyClient;
-    }
+//    @Valid
+//    @NotNull
+//    private JerseyClientConfiguration jerseyClient = new JerseyClientConfiguration();
+//
+//    @JsonProperty("jerseyClient")
+//    public JerseyClientConfiguration getJerseyClientConfiguration() {
+//        return jerseyClient;
+//    }
+//
+//    @JsonProperty("jerseyClient")
+//    public void setJerseyClientConfiguration(JerseyClientConfiguration jerseyClient) {
+//        this.jerseyClient = jerseyClient;
+//    }
 }
