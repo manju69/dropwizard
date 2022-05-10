@@ -8,7 +8,7 @@ import domain.dto.GeolocationDTO;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import service.GeolocationService;
+import service.IGeolocationService;
 
 
 import java.util.concurrent.ExecutionException;
@@ -24,7 +24,7 @@ public class GeolocationCaching {
 
     private static LoadingCache<String, GeolocationDTO> geoCache;
 
-    public void initGeoCache(GeolocationService geolocationService) {
+    public void initGeoCache(IGeolocationService geolocationService) {
         if (geoCache == null) {
             geoCache = CacheBuilder.newBuilder()
                             .concurrencyLevel(10)

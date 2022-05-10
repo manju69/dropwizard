@@ -26,6 +26,12 @@ public class GeolocationService implements IGeolocationService{
 
 
     public GeolocationDTO getGeoDataFromAPI(String ipAddress){
+        //*----------------------------------------*/
+//        Geolocation geo = geolocationDAO.getFromQuery(ipAddress);
+//        if(geo==null){
+//            System.out.println("the value is null");;
+//        }
+        //*----------------------------------------*/
         GeolocationDTO geolocationDTO;
         Geolocation geoData;
         try{

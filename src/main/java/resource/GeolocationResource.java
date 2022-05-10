@@ -8,6 +8,8 @@ import io.dropwizard.hibernate.UnitOfWork;
 import io.dropwizard.jersey.caching.CacheControl;
 import org.apache.http.HttpStatus;
 import service.GeolocationService;
+import service.IGeolocationService;
+
 import javax.validation.constraints.Pattern;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -18,8 +20,8 @@ import java.util.concurrent.TimeUnit;
 @Path("/geolocation")
 @Produces(MediaType.APPLICATION_JSON)
 public class GeolocationResource {
-    private final GeolocationService geolocationService;
-    public GeolocationResource(GeolocationService geolocationService)
+    private final IGeolocationService geolocationService;
+    public GeolocationResource(IGeolocationService geolocationService)
     {
         this.geolocationService = geolocationService;
     }

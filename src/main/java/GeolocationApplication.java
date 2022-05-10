@@ -13,6 +13,8 @@ import io.dropwizard.setup.Environment;
 import repository.GeolocationDAO;
 import resource.GeolocationResource;
 import service.GeolocationService;
+import service.IGeolocationService;
+
 import javax.ws.rs.client.Client;
 
 public class GeolocationApplication extends Application<GeolocationConfiguration> {
@@ -36,7 +38,7 @@ public class GeolocationApplication extends Application<GeolocationConfiguration
         final GeolocationDAO geolocationDAO = new GeolocationDAO(hibernate.getSessionFactory());
         final Client client = new JerseyClientBuilder(environment).using(new JerseyClientConfiguration())
                 .build(getName());
-        final GeolocationService geolocationService = new GeolocationService(geolocationDAO,client);
+        final IGeolocationService geolocationService = new GeolocationService(geolocationDAO,client);
         cacheInstance.initGeoCache(geolocationService);
         final GeolocationResource resource = new GeolocationResource(geolocationService);
         environment.jersey().register(new InputValidation());
