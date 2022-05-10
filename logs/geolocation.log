@@ -1,30 +1,48 @@
-INFO  [2022-05-06 20:45:50,236] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
-INFO  [2022-05-06 20:45:50,247] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
-INFO  [2022-05-06 20:45:50,640] org.hibernate.Version: HHH000412: Hibernate Core {5.4.10.Final}
-INFO  [2022-05-06 20:45:50,931] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [domain.Geolocation]
-INFO  [2022-05-06 20:45:50,998] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-INFO  [2022-05-06 20:45:53,620] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-INFO  [2022-05-06 20:45:56,151] io.dropwizard.server.ServerFactory: Starting demo
-INFO  [2022-05-06 20:45:56,441] org.eclipse.jetty.setuid.SetUIDListener: Opened application@76fc5687{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
-INFO  [2022-05-06 20:45:56,442] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@53fbb2b4{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
-INFO  [2022-05-06 20:45:56,491] org.eclipse.jetty.server.Server: jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.10+8-LTS-162
-INFO  [2022-05-06 20:45:58,359] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+INFO  [2022-05-09 19:39:03,649] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2022-05-09 19:39:03,653] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2022-05-09 19:39:03,857] org.hibernate.Version: HHH000412: Hibernate Core {5.4.10.Final}
+INFO  [2022-05-09 19:39:04,148] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [domain.Geolocation]
+INFO  [2022-05-09 19:39:04,194] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+INFO  [2022-05-09 19:39:05,772] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  [2022-05-09 19:39:07,381] io.dropwizard.server.ServerFactory: Starting demo
+INFO  [2022-05-09 19:39:07,519] org.eclipse.jetty.setuid.SetUIDListener: Opened application@6eaf030c{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2022-05-09 19:39:07,520] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@b2da3a5{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2022-05-09 19:39:07,523] org.eclipse.jetty.server.Server: jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.10+8-LTS-162
+INFO  [2022-05-09 19:39:08,157] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /geolocation/{ipAddress} (resource.GeolocationResource)
 
-INFO  [2022-05-06 20:45:58,370] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@3023f157{/,null,AVAILABLE}
-INFO  [2022-05-06 20:45:58,379] io.dropwizard.setup.AdminEnvironment: tasks = 
+INFO  [2022-05-09 19:39:08,160] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@77ebc9e6{/,null,AVAILABLE}
+INFO  [2022-05-09 19:39:08,162] io.dropwizard.setup.AdminEnvironment: tasks = 
 
     POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
     POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
 
-INFO  [2022-05-06 20:45:58,390] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@7a522157{/,null,AVAILABLE}
-INFO  [2022-05-06 20:45:58,451] org.eclipse.jetty.server.AbstractConnector: Started application@76fc5687{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
-INFO  [2022-05-06 20:45:58,478] org.eclipse.jetty.server.AbstractConnector: Started admin@53fbb2b4{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
-INFO  [2022-05-06 20:45:58,479] org.eclipse.jetty.server.Server: Started @13576ms
-INFO  [2022-05-06 20:46:25,143] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
-    327000 nanoseconds spent acquiring 1 JDBC connections;
-    84100 nanoseconds spent releasing 1 JDBC connections;
+INFO  [2022-05-09 19:39:08,167] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@6978a32a{/,null,AVAILABLE}
+INFO  [2022-05-09 19:39:08,178] org.eclipse.jetty.server.AbstractConnector: Started application@6eaf030c{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2022-05-09 19:39:08,181] org.eclipse.jetty.server.AbstractConnector: Started admin@b2da3a5{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2022-05-09 19:39:08,181] org.eclipse.jetty.server.Server: Started @7252ms
+INFO  [2022-05-09 19:39:14,836] caching.GeolocationCaching: CacheStats = CacheStats{hitCount=0, missCount=0, loadSuccessCount=0, loadExceptionCount=0, totalLoadTime=0, evictionCount=0} 
+INFO  [2022-05-09 19:39:14,848] caching.GeolocationCaching: Fetching Geolocation Data from DB/ Cache
+INFO  [2022-05-09 19:39:14,848] service.GeolocationService: Ip address Searching in Database: 24.48.0.1
+INFO  [2022-05-09 19:39:14,848] service.GeolocationService: Database is called to search Ip address: 24.48.0.1
+INFO  [2022-05-09 19:39:14,894] service.GeolocationService: Record found in database
+INFO  [2022-05-09 19:39:14,904] service.GeolocationService: Refreshing data in 5 minutes by calling external API
+INFO  [2022-05-09 19:39:15,313] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    56901 nanoseconds spent acquiring 1 JDBC connections;
+    69399 nanoseconds spent releasing 1 JDBC connections;
+    8083800 nanoseconds spent preparing 1 JDBC statements;
+    5627200 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    7730601 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2022-05-09 19:39:20,805] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    48899 nanoseconds spent acquiring 1 JDBC connections;
+    27301 nanoseconds spent releasing 1 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
     0 nanoseconds spent executing 0 JDBC statements;
     0 nanoseconds spent executing 0 JDBC batches;
@@ -34,10 +52,10 @@ INFO  [2022-05-06 20:46:25,143] org.hibernate.engine.internal.StatisticalLogging
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-WARN  [2022-05-06 20:46:25,144] resource.GeolocationResource: Invalid IP Address: Please enter Ip address in the format:: 000.000.000.000 to 255.255.255.255 
-INFO  [2022-05-06 20:46:40,999] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
-    79100 nanoseconds spent acquiring 1 JDBC connections;
-    43000 nanoseconds spent releasing 1 JDBC connections;
+WARN  [2022-05-09 19:39:20,808] resource.GeolocationResource: Invalid IP Address: Please enter Ip address in the format:: 000.000.000.000 to 255.255.255.255 
+INFO  [2022-05-09 19:39:39,092] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    120200 nanoseconds spent acquiring 1 JDBC connections;
+    57700 nanoseconds spent releasing 1 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
     0 nanoseconds spent executing 0 JDBC statements;
     0 nanoseconds spent executing 0 JDBC batches;
@@ -47,116 +65,378 @@ INFO  [2022-05-06 20:46:40,999] org.hibernate.engine.internal.StatisticalLogging
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-WARN  [2022-05-06 20:46:41,000] resource.GeolocationResource: Invalid IP Address: Please enter Ip address in the format:: 000.000.000.000 to 255.255.255.255 
-INFO  [2022-05-06 20:46:57,307] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
-    68000 nanoseconds spent acquiring 1 JDBC connections;
-    33500 nanoseconds spent releasing 1 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-WARN  [2022-05-06 20:46:57,307] resource.GeolocationResource: Invalid IP Address: Please enter Ip address in the format:: 000.000.000.000 to 255.255.255.255 
-INFO  [2022-05-06 20:48:15,180] caching.GeolocationCaching: CacheStats = CacheStats{hitCount=0, missCount=0, loadSuccessCount=0, loadExceptionCount=0, totalLoadTime=0, evictionCount=0} 
-INFO  [2022-05-06 20:48:15,190] caching.GeolocationCaching: Fetching Geolocation Data from DB/ Cache
-INFO  [2022-05-06 20:48:15,191] service.GeolocationService: Ip address Searching in Database: 24.48.0.1
-INFO  [2022-05-06 20:48:15,191] service.GeolocationService: Database is called to search Ip address: 24.48.0.1
-INFO  [2022-05-06 20:48:15,234] service.GeolocationService: Record found in database
-INFO  [2022-05-06 20:48:15,242] service.GeolocationService: Refreshing data in 5 minutes by calling external API
-INFO  [2022-05-06 20:48:15,636] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
-    40300 nanoseconds spent acquiring 1 JDBC connections;
-    22400 nanoseconds spent releasing 1 JDBC connections;
-    7044501 nanoseconds spent preparing 1 JDBC statements;
-    6907800 nanoseconds spent executing 1 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    5025300 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-INFO  [2022-05-06 20:50:48,623] caching.GeolocationCaching: CacheStats = CacheStats{hitCount=0, missCount=1, loadSuccessCount=1, loadExceptionCount=0, totalLoadTime=430035300, evictionCount=0} 
-INFO  [2022-05-06 20:50:48,645] caching.GeolocationCaching: Fetching Geolocation Data from DB/ Cache
-INFO  [2022-05-06 20:50:48,645] service.GeolocationService: Ip address Searching in Database: 24.48.0.1
-INFO  [2022-05-06 20:50:48,645] service.GeolocationService: Database is called to search Ip address: 24.48.0.1
-INFO  [2022-05-06 20:50:48,652] service.GeolocationService: Record found in database
-INFO  [2022-05-06 20:50:48,652] service.GeolocationService: Refreshing data in 5 minutes by calling external API
-INFO  [2022-05-06 20:50:48,761] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
-    85200 nanoseconds spent acquiring 1 JDBC connections;
-    55200 nanoseconds spent releasing 1 JDBC connections;
-    888200 nanoseconds spent preparing 1 JDBC statements;
-    2712200 nanoseconds spent executing 1 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    378400 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-INFO  [2022-05-06 20:50:57,598] caching.GeolocationCaching: CacheStats = CacheStats{hitCount=0, missCount=2, loadSuccessCount=2, loadExceptionCount=0, totalLoadTime=538901201, evictionCount=1} 
-INFO  [2022-05-06 20:50:57,602] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
-    277001 nanoseconds spent acquiring 1 JDBC connections;
-    38200 nanoseconds spent releasing 1 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-INFO  [2022-05-06 20:53:02,434] caching.GeolocationCaching: CacheStats = CacheStats{hitCount=1, missCount=2, loadSuccessCount=2, loadExceptionCount=0, totalLoadTime=538901201, evictionCount=1} 
-INFO  [2022-05-06 20:53:02,434] caching.GeolocationCaching: Fetching Geolocation Data from DB/ Cache
-INFO  [2022-05-06 20:53:02,434] service.GeolocationService: Ip address Searching in Database: 24.48.0.1
-INFO  [2022-05-06 20:53:02,434] service.GeolocationService: Database is called to search Ip address: 24.48.0.1
-INFO  [2022-05-06 20:53:02,440] service.GeolocationService: Record found in database
-INFO  [2022-05-06 20:53:02,440] service.GeolocationService: Refreshing data in 5 minutes by calling external API
-INFO  [2022-05-06 20:53:02,555] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
-    42500 nanoseconds spent acquiring 1 JDBC connections;
-    217900 nanoseconds spent releasing 1 JDBC connections;
-    1106000 nanoseconds spent preparing 1 JDBC statements;
-    3510300 nanoseconds spent executing 1 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    115600 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-INFO  [2022-05-06 20:59:44,122] org.eclipse.jetty.server.AbstractConnector: Stopped application@76fc5687{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
-INFO  [2022-05-06 20:59:44,126] org.eclipse.jetty.server.AbstractConnector: Stopped admin@53fbb2b4{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
-INFO  [2022-05-06 20:59:44,129] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@7a522157{/,null,UNAVAILABLE}
-INFO  [2022-05-06 20:59:44,148] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@3023f157{/,null,UNAVAILABLE}
-INFO  [2022-05-06 20:59:50,777] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
-INFO  [2022-05-06 20:59:50,782] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
-INFO  [2022-05-06 20:59:50,967] org.hibernate.Version: HHH000412: Hibernate Core {5.4.10.Final}
-INFO  [2022-05-06 20:59:51,138] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [domain.Geolocation]
-INFO  [2022-05-06 20:59:51,189] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-INFO  [2022-05-06 20:59:52,493] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-INFO  [2022-05-06 20:59:53,722] io.dropwizard.server.ServerFactory: Starting demo
-INFO  [2022-05-06 20:59:53,866] org.eclipse.jetty.setuid.SetUIDListener: Opened application@7a3a49e5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
-INFO  [2022-05-06 20:59:53,866] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@6c1b82cd{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
-INFO  [2022-05-06 20:59:53,869] org.eclipse.jetty.server.Server: jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.10+8-LTS-162
-INFO  [2022-05-06 20:59:54,637] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+WARN  [2022-05-09 19:39:39,092] resource.GeolocationResource: Invalid IP Address: Please enter Ip address in the format:: 000.000.000.000 to 255.255.255.255 
+INFO  [2022-05-09 22:18:07,707] org.eclipse.jetty.server.AbstractConnector: Stopped application@6eaf030c{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2022-05-09 22:18:07,714] org.eclipse.jetty.server.AbstractConnector: Stopped admin@b2da3a5{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2022-05-09 22:18:07,720] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@6978a32a{/,null,UNAVAILABLE}
+INFO  [2022-05-09 22:18:07,750] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@77ebc9e6{/,null,UNAVAILABLE}
+INFO  [2022-05-10 00:34:04,470] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2022-05-10 00:34:04,474] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2022-05-10 00:34:04,655] org.hibernate.Version: HHH000412: Hibernate Core {5.4.10.Final}
+INFO  [2022-05-10 00:34:04,808] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [domain.Geolocation]
+INFO  [2022-05-10 00:34:04,844] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+INFO  [2022-05-10 00:34:06,025] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  [2022-05-10 00:34:07,324] io.dropwizard.server.ServerFactory: Starting demo
+INFO  [2022-05-10 00:34:07,449] org.eclipse.jetty.setuid.SetUIDListener: Opened application@7a3a49e5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2022-05-10 00:34:07,449] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@6c1b82cd{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2022-05-10 00:34:07,451] org.eclipse.jetty.server.Server: jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.10+8-LTS-162
+INFO  [2022-05-10 00:34:08,037] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
     GET     /geolocation/{ipAddress} (resource.GeolocationResource)
 
-INFO  [2022-05-06 20:59:54,641] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@cbdc0f4{/,null,AVAILABLE}
-INFO  [2022-05-06 20:59:54,647] io.dropwizard.setup.AdminEnvironment: tasks = 
+INFO  [2022-05-10 00:34:08,040] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@cbdc0f4{/,null,AVAILABLE}
+INFO  [2022-05-10 00:34:08,045] io.dropwizard.setup.AdminEnvironment: tasks = 
 
     POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
     POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
 
-INFO  [2022-05-06 20:59:54,654] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@54c3e686{/,null,AVAILABLE}
-INFO  [2022-05-06 20:59:54,671] org.eclipse.jetty.server.AbstractConnector: Started application@7a3a49e5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
-INFO  [2022-05-06 20:59:54,680] org.eclipse.jetty.server.AbstractConnector: Started admin@6c1b82cd{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
-INFO  [2022-05-06 20:59:54,680] org.eclipse.jetty.server.Server: Started @6717ms
-INFO  [2022-05-06 21:04:12,464] org.eclipse.jetty.server.AbstractConnector: Stopped application@7a3a49e5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
-INFO  [2022-05-06 21:04:12,469] org.eclipse.jetty.server.AbstractConnector: Stopped admin@6c1b82cd{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
-INFO  [2022-05-06 21:04:12,472] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@54c3e686{/,null,UNAVAILABLE}
-INFO  [2022-05-06 21:04:12,522] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@cbdc0f4{/,null,UNAVAILABLE}
+INFO  [2022-05-10 00:34:08,051] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@54c3e686{/,null,AVAILABLE}
+INFO  [2022-05-10 00:34:08,068] org.eclipse.jetty.server.AbstractConnector: Started application@7a3a49e5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2022-05-10 00:34:08,072] org.eclipse.jetty.server.AbstractConnector: Started admin@6c1b82cd{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2022-05-10 00:34:08,072] org.eclipse.jetty.server.Server: Started @6087ms
+INFO  [2022-05-10 00:34:12,626] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    56099 nanoseconds spent acquiring 1 JDBC connections;
+    33099 nanoseconds spent releasing 1 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+WARN  [2022-05-10 00:34:12,631] resource.GeolocationResource: Invalid IP Address: Please enter Ip address in the format:: 000.000.000.000 to 255.255.255.255 
+INFO  [2022-05-10 00:34:31,744] caching.GeolocationCaching: CacheStats = CacheStats{hitCount=0, missCount=0, loadSuccessCount=0, loadExceptionCount=0, totalLoadTime=0, evictionCount=0} 
+INFO  [2022-05-10 00:34:31,754] caching.GeolocationCaching: Fetching Geolocation Data from DB/ Cache
+ERROR [2022-05-10 00:34:31,800] org.hibernate.hql.internal.ast.ErrorTracker: line 1:8: unexpected token: *
+ERROR [2022-05-10 00:34:31,801] org.hibernate.hql.internal.ast.ErrorTracker: line 1:8: unexpected token: *
+! antlr.NoViableAltException: unexpected token: *
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.selectClause(HqlBaseParser.java:1263)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.selectFrom(HqlBaseParser.java:1040)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:748)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:319)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:198)
+! at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:290)
+! at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+! at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+! at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+! at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+! at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+! at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:600)
+! at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:709)
+! at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:109)
+! at repository.GeolocationDAO.getFromQuery(GeolocationDAO.java:24)
+! at service.GeolocationService.getGeoDataFromAPI(GeolocationService.java:30)
+! at caching.GeolocationCaching$1.load(GeolocationCaching.java:38)
+! at caching.GeolocationCaching$1.load(GeolocationCaching.java:34)
+! at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3533)
+! at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2282)
+! at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2159)
+! at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
+! at com.google.common.cache.LocalCache.get(LocalCache.java:3966)
+! at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3989)
+! at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4950)
+! at caching.GeolocationCaching.getGeolocationDataFromCache(GeolocationCaching.java:48)
+! at resource.GeolocationResource.getGeolocation(GeolocationResource.java:36)
+! at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+! at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+! at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+! at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+! at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+! at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+! at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+! at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+! at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:50)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1617)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:35)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1604)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:47)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:41)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1604)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:249)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:52)
+! at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:767)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:54)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+! at org.eclipse.jetty.server.Server.handle(Server.java:500)
+! at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+! at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+! at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+! at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:135)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+! at java.base/java.lang.Thread.run(Thread.java:834)
+ERROR [2022-05-10 00:34:31,802] org.hibernate.hql.internal.ast.ErrorTracker: line 1:45: unexpected token: .0
+ERROR [2022-05-10 00:34:31,802] org.hibernate.hql.internal.ast.ErrorTracker: line 1:45: unexpected token: .0
+! antlr.NoViableAltException: unexpected token: .0
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.concatenation(HqlBaseParser.java:693)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.relationalExpression(HqlBaseParser.java:2697)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.equalityExpression(HqlBaseParser.java:2653)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.negatedExpression(HqlBaseParser.java:2522)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalAndExpression(HqlBaseParser.java:2438)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalOrExpression(HqlBaseParser.java:2403)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.expression(HqlBaseParser.java:2116)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.logicalExpression(HqlBaseParser.java:1894)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.whereClause(HqlBaseParser.java:498)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:754)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:319)
+! at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:198)
+! at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:290)
+! at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+! at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+! at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+! at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+! at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+! at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:600)
+! at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:709)
+! at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:109)
+! at repository.GeolocationDAO.getFromQuery(GeolocationDAO.java:24)
+! at service.GeolocationService.getGeoDataFromAPI(GeolocationService.java:30)
+! at caching.GeolocationCaching$1.load(GeolocationCaching.java:38)
+! at caching.GeolocationCaching$1.load(GeolocationCaching.java:34)
+! at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3533)
+! at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2282)
+! at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2159)
+! at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
+! at com.google.common.cache.LocalCache.get(LocalCache.java:3966)
+! at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3989)
+! at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4950)
+! at caching.GeolocationCaching.getGeolocationDataFromCache(GeolocationCaching.java:48)
+! at resource.GeolocationResource.getGeolocation(GeolocationResource.java:36)
+! at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+! at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+! at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+! at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+! at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+! at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+! at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+! at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+! at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:50)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1617)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:35)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1604)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:47)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:41)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1604)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:249)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:52)
+! at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:767)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:54)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+! at org.eclipse.jetty.server.Server.handle(Server.java:500)
+! at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+! at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+! at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+! at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:135)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+! at java.base/java.lang.Thread.run(Thread.java:834)
+INFO  [2022-05-10 00:34:31,816] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    55900 nanoseconds spent acquiring 1 JDBC connections;
+    38601 nanoseconds spent releasing 1 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+ERROR [2022-05-10 00:34:31,816] io.dropwizard.jersey.errors.LoggingExceptionMapper: Error handling a request: ce19481d8031a87d
+! org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected token: * near line 1, column 8 [select * from geolocation where query =24.48.0.1]
+! at org.hibernate.hql.internal.ast.QuerySyntaxException.convert(QuerySyntaxException.java:74)
+! at org.hibernate.hql.internal.ast.ErrorTracker.throwQueryException(ErrorTracker.java:93)
+! at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:297)
+! at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:189)
+! at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+! at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:113)
+! at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+! at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:155)
+! at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:600)
+! at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:709)
+! ... 77 common frames omitted
+! Causing: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected token: * near line 1, column 8 [select * from geolocation where query =24.48.0.1]
+! at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+! at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+! at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+! at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:718)
+! at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:109)
+! at repository.GeolocationDAO.getFromQuery(GeolocationDAO.java:24)
+! at service.GeolocationService.getGeoDataFromAPI(GeolocationService.java:30)
+! at caching.GeolocationCaching$1.load(GeolocationCaching.java:38)
+! at caching.GeolocationCaching$1.load(GeolocationCaching.java:34)
+! at com.google.common.cache.LocalCache$LoadingValueReference.loadFuture(LocalCache.java:3533)
+! at com.google.common.cache.LocalCache$Segment.loadSync(LocalCache.java:2282)
+! at com.google.common.cache.LocalCache$Segment.lockedGetOrLoad(LocalCache.java:2159)
+! at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2049)
+! ... 68 common frames omitted
+! Causing: com.google.common.util.concurrent.UncheckedExecutionException: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: unexpected token: * near line 1, column 8 [select * from geolocation where query =24.48.0.1]
+! at com.google.common.cache.LocalCache$Segment.get(LocalCache.java:2055)
+! at com.google.common.cache.LocalCache.get(LocalCache.java:3966)
+! at com.google.common.cache.LocalCache.getOrLoad(LocalCache.java:3989)
+! at com.google.common.cache.LocalCache$LocalLoadingCache.get(LocalCache.java:4950)
+! at caching.GeolocationCaching.getGeolocationDataFromCache(GeolocationCaching.java:48)
+! at resource.GeolocationResource.getGeolocation(GeolocationResource.java:36)
+! at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+! at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+! at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+! at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+! at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:52)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:124)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:167)
+! at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+! at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+! at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+! at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+! at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+! at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+! at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+! at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+! at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:392)
+! at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:365)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:318)
+! at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+! at io.dropwizard.jetty.NonblockingServletHolder.handle(NonblockingServletHolder.java:50)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1617)
+! at io.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:35)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1604)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.handle(AllowedMethodsFilter.java:47)
+! at io.dropwizard.jersey.filter.AllowedMethodsFilter.doFilter(AllowedMethodsFilter.java:41)
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1604)
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+! at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.handle(InstrumentedHandler.java:249)
+! at io.dropwizard.jetty.RoutingHandler.handle(RoutingHandler.java:52)
+! at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:767)
+! at org.eclipse.jetty.server.handler.RequestLogHandler.handle(RequestLogHandler.java:54)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+! at org.eclipse.jetty.server.Server.handle(Server.java:500)
+! at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+! at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+! at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+! at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+! at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+! at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+! at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+! at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:135)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+! at java.base/java.lang.Thread.run(Thread.java:834)
+INFO  [2022-05-10 00:36:36,418] org.eclipse.jetty.server.AbstractConnector: Stopped application@7a3a49e5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2022-05-10 00:36:36,419] org.eclipse.jetty.server.AbstractConnector: Stopped admin@6c1b82cd{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2022-05-10 00:36:36,420] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@54c3e686{/,null,UNAVAILABLE}
+INFO  [2022-05-10 00:36:36,428] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@cbdc0f4{/,null,UNAVAILABLE}
+INFO  [2022-05-10 00:36:41,777] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2022-05-10 00:36:41,782] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2022-05-10 00:36:41,940] org.hibernate.Version: HHH000412: Hibernate Core {5.4.10.Final}
+INFO  [2022-05-10 00:36:42,092] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [domain.Geolocation]
+INFO  [2022-05-10 00:36:42,135] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+INFO  [2022-05-10 00:36:43,241] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+INFO  [2022-05-10 00:36:44,347] io.dropwizard.server.ServerFactory: Starting demo
+INFO  [2022-05-10 00:36:44,485] org.eclipse.jetty.setuid.SetUIDListener: Opened application@7a3a49e5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2022-05-10 00:36:44,485] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@6c1b82cd{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2022-05-10 00:36:44,492] org.eclipse.jetty.server.Server: jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.10+8-LTS-162
+INFO  [2022-05-10 00:36:45,130] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /geolocation/{ipAddress} (resource.GeolocationResource)
+
+INFO  [2022-05-10 00:36:45,133] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@cbdc0f4{/,null,AVAILABLE}
+INFO  [2022-05-10 00:36:45,136] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2022-05-10 00:36:45,141] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@54c3e686{/,null,AVAILABLE}
+INFO  [2022-05-10 00:36:45,154] org.eclipse.jetty.server.AbstractConnector: Started application@7a3a49e5{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2022-05-10 00:36:45,157] org.eclipse.jetty.server.AbstractConnector: Started admin@6c1b82cd{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2022-05-10 00:36:45,157] org.eclipse.jetty.server.Server: Started @5741ms
